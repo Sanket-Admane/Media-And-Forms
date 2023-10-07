@@ -1,0 +1,70 @@
+<!-- Create a sign-up and sign-in from with proper validation.
+    A: asign-up from should have a first name, last name, email, passworld, confirm passworld, age, gender, and agree to terms and conditions
+    filed at minimum (you can add any other if you like)
+    B:Sign-in form should have email and passworld fields.
+
+    Note: validation is a must
+    EX: First name, last name, and email cannot be less than 3 characters, age cannot be navigates and cannot be grater than 150, filds are required, etc..
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action="" target="_blank">
+        <label for="firsName">First Name:
+            <input type="text" name="firstName" placeholder="Sanket" id="firstName" required mimlength="3" max="20"/>
+        </label>
+        <br>
+
+        <label for="lastName">Last Name:
+            <input type="text" name="lastName" placeholder="Admane" id="lastName" required minlength="3" max="20"/>
+        </label>
+        <br>
+
+        <label for="email">Email:
+            <input type="text" name="email" placeholder="sanket@gmail.com" id="email" required />
+        </label>
+        <br>
+
+        <label for="passworld">Passworld:
+            <input type="text" name="passworld" placeholder="passworld" id="passworld" required min="8" /> 
+        </label>
+        <br>
+
+        <label for="confirmPassworld">Confirm Passworld
+            <input type="text" name="confirmPassworld" placeholder="***********" id="confirmPassworld" required />
+        </label>
+        <br>
+
+        <label for="age">Age:
+            <input type="text" name="age" placeholder="38" id="age" required min="0" max="100" />
+        </label>
+        <br>
+         
+        <label for="gender">Gender:
+            <input type="radio" id="male" value="male" name="gender" checked />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" value="female" name="gender" checked />
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" value="other" name="gender" checked />
+            <label for="other">Other</label>
+        </label>
+        <br>
+        
+        <label for="terms">terms:
+            <input type="checkbox" id="terms" />I agree to terms and conditions
+        </label>
+        <br>
+
+            <button type="submit">Register</button>
+
+        </label>
+    </form>
+</body>
+</html>
